@@ -9,9 +9,33 @@
 #import <Cocoa/Cocoa.h>
 
 @interface VillainTrackerAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
+    IBOutlet NSTextField            *nameView;
+    IBOutlet NSTextField            *lastKnownLocationView;
+    IBOutlet NSDatePicker           *lastSeenDateView;
+    IBOutlet NSComboBox             *swornEnemyView;
+    IBOutlet NSMatrix               *primaryMotivationView;
+    IBOutlet NSMatrix               *powersView;
+    IBOutlet NSPopUpButton          *powerSourceView;
+    IBOutlet NSLevelIndicator       *evilnessView;
+    IBOutlet NSImageView            *mugshotView;
+    
+    NSWindow                        *window;
+    NSMutableDictionary             *villain;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow                *window;
+@property (retain) NSMutableDictionary              *villain;
+
+- (IBAction)takeName:(id)sender;
+- (IBAction)takeLastKnownLocation:(id)sender;
+- (IBAction)takeLastSeenDate:(id)sender;
+- (IBAction)takeSwornEnemy:(id)sender;
+- (IBAction)takePrimaryMotivation:(id)sender;
+- (IBAction)takePowerSource:(id)sender;
+- (IBAction)takePowers:(id)sender;
+- (IBAction)takeMugShot:(id)sender;
+- (IBAction)takeEvilness:(id)sender;
+
+
 
 @end

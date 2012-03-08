@@ -11,8 +11,20 @@
 @implementation VillainTrackerAppDelegate
 
 @synthesize window;
+@synthesize villain;
+
+- (IBAction)takeName:(id)sender{}
+- (IBAction)takeLastKnownLocation:(id)sender{}
+- (IBAction)takeLastSeenDate:(id)sender{}
+- (IBAction)takeSwornEnemy:(id)sender{}
+- (IBAction)takePrimaryMotivation:(id)sender{}
+- (IBAction)takePowerSource:(id)sender{}
+- (IBAction)takePowers:(id)sender{}
+- (IBAction)takeMugShot:(id)sender{}
+- (IBAction)takeEvilness:(id)sender{}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+
 {
     // Insert code here to initialize your application
 }

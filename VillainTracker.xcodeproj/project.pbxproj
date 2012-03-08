@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844516D51508C865007D155B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844516D41508C865007D155B /* Cocoa.framework */; };
+		844516DF1508C865007D155B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844516DD1508C865007D155B /* InfoPlist.strings */; };
+		844516E11508C865007D155B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 844516E01508C865007D155B /* main.m */; };
+		844516E51508C865007D155B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 844516E31508C865007D155B /* Credits.rtf */; };
+		844516E81508C865007D155B /* VillainTrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844516E71508C865007D155B /* VillainTrackerAppDelegate.m */; };
+		844516EB1508C865007D155B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844516E91508C865007D155B /* MainMenu.xib */; };
+		844516F31508C865007D155B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844516F21508C865007D155B /* SenTestingKit.framework */; };
+		844516F41508C865007D155B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844516D41508C865007D155B /* Cocoa.framework */; };
+		844516FC1508C865007D155B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844516FA1508C865007D155B /* InfoPlist.strings */; };
+		844516FE1508C865007D155B /* VillainTrackerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 844516FD1508C865007D155B /* VillainTrackerTests.h */; };
+		844517001508C866007D155B /* VillainTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844516FF1508C866007D155B /* VillainTrackerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844516F51508C865007D155B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844516C71508C865007D155B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844516CF1508C865007D155B;
+			remoteInfo = VillainTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844516D01508C865007D155B /* VillainTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VillainTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		844516D41508C865007D155B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		844516D71508C865007D155B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		844516D81508C865007D155B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		844516D91508C865007D155B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		844516DC1508C865007D155B /* VillainTracker-Info.plist */ = {isa = PBXFileReference; path = "VillainTracker-Info.plist"; sourceTree = "<group>"; };
+		844516DE1508C865007D155B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844516E01508C865007D155B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		844516E21508C865007D155B /* VillainTracker-Prefix.pch */ = {isa = PBXFileReference; path = "VillainTracker-Prefix.pch"; sourceTree = "<group>"; };
+		844516E41508C865007D155B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		844516E61508C865007D155B /* VillainTrackerAppDelegate.h */ = {isa = PBXFileReference; path = VillainTrackerAppDelegate.h; sourceTree = "<group>"; };
+		844516E71508C865007D155B /* VillainTrackerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VillainTrackerAppDelegate.m; sourceTree = "<group>"; };
+		844516EA1508C865007D155B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		844516F11508C865007D155B /* VillainTrackerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VillainTrackerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		844516F21508C865007D155B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		844516F91508C865007D155B /* VillainTrackerTests-Info.plist */ = {isa = PBXFileReference; path = "VillainTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		844516FB1508C865007D155B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		844516FD1508C865007D155B /* VillainTrackerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VillainTrackerTests.h; sourceTree = "<group>"; };
+		844516FF1508C866007D155B /* VillainTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VillainTrackerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		844516CD1508C865007D155B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844516D51508C865007D155B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844516ED1508C865007D155B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844516F31508C865007D155B /* SenTestingKit.framework in Frameworks */,
+				844516F41508C865007D155B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844516C51508C865007D155B = {
+			isa = PBXGroup;
+			children = (
+				844516DA1508C865007D155B /* VillainTracker */,
+				844516F71508C865007D155B /* VillainTrackerTests */,
+				844516D31508C865007D155B /* Frameworks */,
+				844516D11508C865007D155B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		844516D11508C865007D155B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844516D01508C865007D155B /* VillainTracker.app */,
+				844516F11508C865007D155B /* VillainTrackerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844516D31508C865007D155B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844516D41508C865007D155B /* Cocoa.framework */,
+				844516F21508C865007D155B /* SenTestingKit.framework */,
+				844516D61508C865007D155B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844516D61508C865007D155B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844516D71508C865007D155B /* AppKit.framework */,
+				844516D81508C865007D155B /* CoreData.framework */,
+				844516D91508C865007D155B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		844516DA1508C865007D155B /* VillainTracker */ = {
+			isa = PBXGroup;
+			children = (
+				844516E61508C865007D155B /* VillainTrackerAppDelegate.h */,
+				844516E71508C865007D155B /* VillainTrackerAppDelegate.m */,
+				844516E91508C865007D155B /* MainMenu.xib */,
+				844516DB1508C865007D155B /* Supporting Files */,
+			);
+			path = VillainTracker;
+			sourceTree = "<group>";
+		};
+		844516DB1508C865007D155B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844516DC1508C865007D155B /* VillainTracker-Info.plist */,
+				844516DD1508C865007D155B /* InfoPlist.strings */,
+				844516E01508C865007D155B /* main.m */,
+				844516E21508C865007D155B /* VillainTracker-Prefix.pch */,
+				844516E31508C865007D155B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844516F71508C865007D155B /* VillainTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				844516FD1508C865007D155B /* VillainTrackerTests.h */,
+				844516FF1508C866007D155B /* VillainTrackerTests.m */,
+				844516F81508C865007D155B /* Supporting Files */,
+			);
+			path = VillainTrackerTests;
+			sourceTree = "<group>";
+		};
+		844516F81508C865007D155B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844516F91508C865007D155B /* VillainTrackerTests-Info.plist */,
+				844516FA1508C865007D155B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		844516CF1508C865007D155B /* VillainTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844517031508C866007D155B /* Build configuration list for PBXNativeTarget "VillainTracker" */;
+			buildPhases = (
+				844516CC1508C865007D155B /* Sources */,
+				844516CD1508C865007D155B /* Frameworks */,
+				844516CE1508C865007D155B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VillainTracker;
+			productName = VillainTracker;
+			productReference = 844516D01508C865007D155B /* VillainTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		844516F01508C865007D155B /* VillainTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844517061508C866007D155B /* Build configuration list for PBXNativeTarget "VillainTrackerTests" */;
+			buildPhases = (
+				844516EC1508C865007D155B /* Sources */,
+				844516ED1508C865007D155B /* Frameworks */,
+				844516EE1508C865007D155B /* Resources */,
+				844516EF1508C865007D155B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				844516F61508C865007D155B /* PBXTargetDependency */,
+			);
+			name = VillainTrackerTests;
+			productName = VillainTrackerTests;
+			productReference = 844516F11508C865007D155B /* VillainTrackerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844516C71508C865007D155B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "isassetmgmt@thoughtworks.com";
+			};
+			buildConfigurationList = 844516CA1508C865007D155B /* Build configuration list for PBXProject "VillainTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 844516C51508C865007D155B;
+			productRefGroup = 844516D11508C865007D155B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844516CF1508C865007D155B /* VillainTracker */,
+				844516F01508C865007D155B /* VillainTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		844516CE1508C865007D155B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844516DF1508C865007D155B /* InfoPlist.strings in Resources */,
+				844516E51508C865007D155B /* Credits.rtf in Resources */,
+				844516EB1508C865007D155B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844516EE1508C865007D155B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844516FC1508C865007D155B /* InfoPlist.strings in Resources */,
+				844516FE1508C865007D155B /* VillainTrackerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		844516EF1508C865007D155B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		844516CC1508C865007D155B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844516E11508C865007D155B /* main.m in Sources */,
+				844516E81508C865007D155B /* VillainTrackerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844516EC1508C865007D155B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844517001508C866007D155B /* VillainTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		844516F61508C865007D155B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844516CF1508C865007D155B /* VillainTracker */;
+			targetProxy = 844516F51508C865007D155B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844516DD1508C865007D155B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844516DE1508C865007D155B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		844516E31508C865007D155B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844516E41508C865007D155B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		844516E91508C865007D155B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844516EA1508C865007D155B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		844516FA1508C865007D155B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844516FB1508C865007D155B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		844517011508C866007D155B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		844517021508C866007D155B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		844517041508C866007D155B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VillainTracker/VillainTracker-Prefix.pch";
+				INFOPLIST_FILE = "VillainTracker/VillainTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		844517051508C866007D155B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VillainTracker/VillainTracker-Prefix.pch";
+				INFOPLIST_FILE = "VillainTracker/VillainTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		844517071508C866007D155B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VillainTracker.app/Contents/MacOS/VillainTracker";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VillainTracker/VillainTracker-Prefix.pch";
+				INFOPLIST_FILE = "VillainTrackerTests/VillainTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		844517081508C866007D155B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VillainTracker.app/Contents/MacOS/VillainTracker";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VillainTracker/VillainTracker-Prefix.pch";
+				INFOPLIST_FILE = "VillainTrackerTests/VillainTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		844516CA1508C865007D155B /* Build configuration list for PBXProject "VillainTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844517011508C866007D155B /* Debug */,
+				844517021508C866007D155B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844517031508C866007D155B /* Build configuration list for PBXNativeTarget "VillainTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844517041508C866007D155B /* Debug */,
+				844517051508C866007D155B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		844517061508C866007D155B /* Build configuration list for PBXNativeTarget "VillainTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844517071508C866007D155B /* Debug */,
+				844517081508C866007D155B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844516C71508C865007D155B /* Project object */;
+}

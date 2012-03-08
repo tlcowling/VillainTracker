@@ -8,6 +8,33 @@
 
 #import "VillainTrackerAppDelegate.h"
 
+#define kName @"name"
+#define kLastKnownLocation @"lastKnownLocation"
+#define kLastSeenDate @"lastSeenDate"
+#define kSwornEnemy @"swornEnemy"
+#define kPrimaryMotivation @"primaryMotivation"
+#define kPowers @"powers"
+#define kPowerSource @"powerSource"
+#define kEvilness @"evilness"
+#define kMugshot @"mugshot"
+#define kNotes @"notes"
+
+@interface VillainTrackerAppDelegate (privateMethods)
+- (void)updateDetailsViews;
+@end
+
+@implementation VillainTrackerAppDelegate (privateMethods)
+- (void)updateDetailsViews{
+    [nameView setStringValue:[villain objectForKey:kName]];
+    [lastKnownLocationView setStringValue:[villain objectForKey:kLastKnownLocation]];
+    [lastSeenDateView setDateValue:[villain objectForKey:kLastSeenDate]];
+    [evilnessView setIntegerValue:[[villain objectForKey:kEvilness]integerValue]];
+    [powerSourceView setTitle:[villain objectForKey:kPowerSource]];
+    [mugshotView setImage:[villain objectForKey:kMugshot]];
+    [notesView setString:[villain objectForKey:kNotes]];
+}
+@end
+
 @implementation VillainTrackerAppDelegate
 
 @synthesize window;
@@ -24,9 +51,20 @@
 - (IBAction)takeEvilness:(id)sender{}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-
 {
-    // Insert code here to initialize your application
+    self.villain = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"Lex Luthor", kName,
+                                                                      @"Smallville", kLastKnownLocation,
+                                                                      [NSDate date], kLastSeenDate,
+                                                                      @"Superman", kSwornEnemy,
+                                                                      @"Revenge",   kPrimaryMotivation,
+                                                                      [NSArray arrayWithObjects:@"Intellect",@"Leadership",nil], kPowers,
+                                                                      @"Superhero action", kPowerSource,
+                                                                      [NSNumber numberWithInt:9], kEvilness,
+                                                                      [NSImage imageNamed:@"NSUser"], kMugshot,
+                                                                      @"", kNotes,
+                    nil];
+    
+    [self updateDetailsViews];
 }
 
 @end

@@ -18,6 +18,7 @@
     IBOutlet NSPopUpButton          *powerSourceView;
     IBOutlet NSLevelIndicator       *evilnessView;
     IBOutlet NSImageView            *mugshotView;
+    IBOutlet NSTextView             *notesView;
     
     NSWindow                        *window;
     NSMutableDictionary             *villain;
